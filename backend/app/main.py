@@ -4,30 +4,24 @@ FastAPI 앱 진입점
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
 
+from app.core.config import get_settings
 from app.routers import diagnose, match, plan
 
-# .env 파일에서 환경변수 로드
-load_dotenv()
+settings = get_settings()
 
 app = FastAPI(
-    title="Startup Copilot API",
-    description="AI 기반 청년 예비창업자 사업화 지원 플랫폼 백엔드",
-    version="0.1.0",
+    title=settings.app_name,
+    version=settings.app_version,
+    description="청년 예비창업자의 아이디어 진단·지원사업 매칭·사업계획서 초안 생성을 지원하는 MVP 백엔드 API",
 )
 
-# CORS 설정 — 프론트엔드(Vite 기본 포트 5173, 3000)에서 접근 허용
+# CORS 설정
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "http://127.0.0.1:5173",
-        "http://127.0.0.1:3000",
-    ],
+    allow_origins=settings.cors_origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -37,6 +31,6 @@ app.include_router(match.router, prefix="/api", tags=["매칭"])
 app.include_router(plan.router, prefix="/api", tags=["사업계획서"])
 
 
-@app.get("/health")
-def health_check():
-    return {"status": "ok", "service": "startup-copilot-api"}
+@app.get("/health", tags=["system"])
+async def health_check():
+    return {"status": "ok", "service": settings.app_name}

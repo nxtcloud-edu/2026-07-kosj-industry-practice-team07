@@ -3,9 +3,9 @@
 POST /api/plan
 """
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from app.models.schemas import PlanRequest, PlanResponse, PlanSection
-from app.services.ai_service import generate_plan
+from app.services.ai_service import get_ai_service, LLMServiceError
 
 router = APIRouter()
 
@@ -19,12 +19,15 @@ async def create_plan(request: PlanRequest):
     - 출력: 5개 섹션 (문제 정의, 해결 방안, 시장 분석, 수익 모델, 팀 구성)
     - 각 섹션은 사용자가 검토·수정 가능
     """
-    raw_sections = generate_plan(
-        idea=request.idea,
-        target=request.target,
-        problem=request.problem,
-        diagnosis_summary=request.diagnosisSummary,
-    )
+    try:
+        raw_sections = await get_ai_service().generate_plan(
+            idea=request.idea,
+            target=request.target,
+            problem=request.problem,
+            diagnosis_summary=request.diagnosisSummary,
+        )
+    except LLMServiceError as exc:
+        raise HTTPException(status_code=exc.status_code, detail=str(exc))
 
     sections = [
         PlanSection(
