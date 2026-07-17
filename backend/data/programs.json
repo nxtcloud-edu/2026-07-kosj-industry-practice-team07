@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "name": "청년창업사관학교",
+    "organization": "중소벤처기업부",
+    "deadline": "2026.08.15",
+    "maxFunding": "1억원",
+    "conditions": {
+      "ageRange": [19, 39],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["IT", "교육", "헬스케어", "커머스", "콘텐츠"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 2,
+    "name": "예비창업패키지",
+    "organization": "창업진흥원",
+    "deadline": "2026.08.30",
+    "maxFunding": "5,000만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["IT", "교육", "헬스케어", "커머스", "콘텐츠"],
+      "stages": ["예비"]
+    }
+  },
+  {
+    "id": 3,
+    "name": "세종시 청년창업 지원사업",
+    "organization": "세종창업진흥원",
+    "deadline": "2026.09.01",
+    "maxFunding": "3,000만원",
+    "conditions": {
+      "ageRange": [19, 34],
+      "regions": ["세종"],
+      "fields": ["IT", "교육", "콘텐츠"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 4,
+    "name": "K-Startup 에듀테크 특화 프로그램",
+    "organization": "과학기술정보통신부",
+    "deadline": "2026.08.20",
+    "maxFunding": "7,000만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["IT", "교육"],
+      "stages": ["예비", "초기", "성장"]
+    }
+  },
+  {
+    "id": 5,
+    "name": "대학생 창업유망팀 300",
+    "organization": "교육부",
+    "deadline": "2026.07.31",
+    "maxFunding": "2,000만원",
+    "conditions": {
+      "ageRange": [19, 29],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["IT", "교육", "헬스케어", "커머스", "콘텐츠"],
+      "stages": ["예비"]
+    }
+  },
+  {
+    "id": 6,
+    "name": "소셜벤처 육성사업",
+    "organization": "한국사회적기업진흥원",
+    "deadline": "2026.09.15",
+    "maxFunding": "4,000만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["교육", "헬스케어"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 7,
+    "name": "지역혁신 청년창업 지원",
+    "organization": "중소벤처기업부",
+    "deadline": "2026.08.10",
+    "maxFunding": "3,500만원",
+    "conditions": {
+      "ageRange": [19, 39],
+      "regions": ["세종", "대전"],
+      "fields": ["IT", "교육", "헬스케어", "커머스"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 8,
+    "name": "디지털 헬스케어 창업 지원",
+    "organization": "보건복지부",
+    "deadline": "2026.09.30",
+    "maxFunding": "8,000만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "경기", "대전"],
+      "fields": ["헬스케어"],
+      "stages": ["초기", "성장"]
+    }
+  },
+  {
+    "id": 9,
+    "name": "콘텐츠 스타트업 지원사업",
+    "organization": "문화체육관광부",
+    "deadline": "2026.08.25",
+    "maxFunding": "5,000만원",
+    "conditions": {
+      "ageRange": [19, 39],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["콘텐츠"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 10,
+    "name": "초기창업패키지",
+    "organization": "창업진흥원",
+    "deadline": "2026.08.05",
+    "maxFunding": "1억원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["IT", "교육", "헬스케어", "커머스", "콘텐츠"],
+      "stages": ["초기"]
+    }
+  }
+]

@@ -1,25 +1,34 @@
+"""
+애플리케이션 환경설정 — pydantic_settings 기반
+.env 파일에서 자동 로드됩니다.
+"""
+
 from functools import lru_cache
+from typing import List, Optional
 
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    """애플리케이션 환경설정.
+    """앱 전역 환경설정. 비밀값은 .env에만 두고 저장소에 커밋하지 않습니다."""
 
-    실제 비밀값은 .env에만 두고 저장소에는 커밋하지 않습니다.
-    """
-
-    app_name: str = "AI 창업 코파일럿 API"
+    app_name: str = "Startup Copilot API"
     app_version: str = "0.1.0"
     debug: bool = False
-    api_v1_prefix: str = "/api/v1"
 
-    openai_api_key: str | None = Field(default=None, repr=False)
-    openai_model: str = "gpt-5.6"
+    # OpenAI
+    openai_api_key: Optional[str] = Field(default=None, repr=False)
+    openai_model: str = "gpt-4o-mini"
     openai_timeout_seconds: float = 30.0
 
-    cors_origins: list[str] = ["http://localhost:5173", "http://localhost:3000"]
+    # CORS
+    cors_origins: List[str] = [
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:3000",
+    ]
 
     model_config = SettingsConfigDict(
         env_file=".env",
