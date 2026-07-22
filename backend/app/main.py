@@ -16,10 +16,11 @@ app = FastAPI(
     description="청년 예비창업자의 아이디어 진단·지원사업 매칭·사업계획서 초안 생성을 지원하는 MVP 백엔드 API",
 )
 
-# CORS 설정
+# CORS 설정 — 로컬 개발 + Vercel/Render 배포 도메인
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
+    allow_origin_regex=r"https://.*\.(vercel\.app|onrender\.com)",
     allow_credentials=True,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],

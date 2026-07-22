@@ -22,12 +22,14 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-4o-mini"
     openai_timeout_seconds: float = 30.0
 
-    # CORS
+    # CORS — 로컬 개발 + 배포 도메인
     cors_origins: List[str] = [
         "http://localhost:5173",
         "http://localhost:3000",
         "http://127.0.0.1:5173",
         "http://127.0.0.1:3000",
+        "https://*.vercel.app",
+        "https://*.onrender.com",
     ]
 
     model_config = SettingsConfigDict(
