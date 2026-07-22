@@ -128,5 +128,135 @@
       "fields": ["IT", "교육", "헬스케어", "커머스", "콘텐츠"],
       "stages": ["초기"]
     }
+  },
+  {
+    "id": 11,
+    "name": "서울시 청년 스타트업 지원",
+    "organization": "서울산업진흥원",
+    "deadline": "2026.09.10",
+    "maxFunding": "5,000만원",
+    "conditions": {
+      "ageRange": [19, 39],
+      "regions": ["서울"],
+      "fields": ["IT", "교육", "헬스케어", "커머스", "콘텐츠"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 12,
+    "name": "부산 글로벌 창업지원",
+    "organization": "부산경제진흥원",
+    "deadline": "2026.08.28",
+    "maxFunding": "4,000만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["부산"],
+      "fields": ["IT", "커머스", "콘텐츠"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 13,
+    "name": "AI·빅데이터 창업 프로그램",
+    "organization": "정보통신산업진흥원",
+    "deadline": "2026.08.18",
+    "maxFunding": "6,000만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["IT"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 14,
+    "name": "경기도 청년창업 드림캠프",
+    "organization": "경기창조경제혁신센터",
+    "deadline": "2026.09.05",
+    "maxFunding": "3,000만원",
+    "conditions": {
+      "ageRange": [19, 34],
+      "regions": ["경기"],
+      "fields": ["IT", "교육", "헬스케어", "커머스"],
+      "stages": ["예비"]
+    }
+  },
+  {
+    "id": 15,
+    "name": "여성 창업 성장패키지",
+    "organization": "한국여성경제인협회",
+    "deadline": "2026.09.20",
+    "maxFunding": "3,000만원",
+    "conditions": {
+      "ageRange": [19, 49],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["교육", "헬스케어", "커머스", "콘텐츠"],
+      "stages": ["초기", "성장"]
+    }
+  },
+  {
+    "id": 16,
+    "name": "대전 과학기술 창업지원",
+    "organization": "대전테크노파크",
+    "deadline": "2026.08.22",
+    "maxFunding": "5,000만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["대전"],
+      "fields": ["IT", "헬스케어"],
+      "stages": ["예비", "초기", "성장"]
+    }
+  },
+  {
+    "id": 17,
+    "name": "소상공인 스마트화 지원",
+    "organization": "소상공인시장진흥공단",
+    "deadline": "2026.09.30",
+    "maxFunding": "2,000만원",
+    "conditions": {
+      "ageRange": [19, 60],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["커머스"],
+      "stages": ["초기", "성장"]
+    }
+  },
+  {
+    "id": 18,
+    "name": "문화콘텐츠 신진작가 창업",
+    "organization": "한국콘텐츠진흥원",
+    "deadline": "2026.08.12",
+    "maxFunding": "2,500만원",
+    "conditions": {
+      "ageRange": [19, 34],
+      "regions": ["서울", "경기", "부산"],
+      "fields": ["콘텐츠"],
+      "stages": ["예비"]
+    }
+  },
+  {
+    "id": 19,
+    "name": "스마트 농업·식품 창업 지원",
+    "organization": "농림축산식품부",
+    "deadline": "2026.09.15",
+    "maxFunding": "4,500만원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "세종", "대전", "경기", "부산"],
+      "fields": ["IT", "헬스케어"],
+      "stages": ["예비", "초기"]
+    }
+  },
+  {
+    "id": 20,
+    "name": "글로벌 스타트업 육성 프로그램",
+    "organization": "KOTRA",
+    "deadline": "2026.10.01",
+    "maxFunding": "1억원",
+    "conditions": {
+      "ageRange": [19, 45],
+      "regions": ["서울", "경기"],
+      "fields": ["IT", "교육", "헬스케어", "커머스", "콘텐츠"],
+      "stages": ["초기", "성장"]
+    }
   }
 ]
