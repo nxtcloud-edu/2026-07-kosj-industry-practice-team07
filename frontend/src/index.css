@@ -1,12 +1,48 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-50: #f0f4ff;
+  --color-primary-100: #e0e9ff;
+  --color-primary-200: #c2d4fe;
+  --color-primary-300: #94b3fd;
+  --color-primary-400: #6088fa;
+  --color-primary-500: #3b63f5;
+  --color-primary-600: #2549ea;
+  --color-primary-700: #1d38d7;
+  --color-primary-800: #1e30ae;
+  --color-primary-900: #1e2d89;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+}
+
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Pretendard Variable', 'Pretendard', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  color: #111827;
+  letter-spacing: -0.01em;
 }
 
 #root {
   min-height: 100svh;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
 }
