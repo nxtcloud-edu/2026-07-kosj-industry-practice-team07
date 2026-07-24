@@ -71,15 +71,13 @@ AI 아이디어 진단
 
 ## 기술 스택
 
-| 영역     | 기술                                       |
-| ------ | ---------------------------------------- |
-| 프론트엔드  | React 19, TypeScript, Vite, Tailwind CSS |
-| 라우팅    | React Router                             |
-| 백엔드    | Python 3.11, FastAPI                     |
-| AI     | OpenAI API (`gpt-4o-mini`)               |
-| 데이터    | JSON 기반 지원사업 데이터                         |
-| API 문서 | Swagger UI                               |
-| 백엔드 배포 | Render                                   |
+프론트엔드: React 19, TypeScript, Vite, Tailwind CSS
+라우팅: React Router
+백엔드: Python 3.11, FastAPI
+AI: OpenAI API (gpt-4o-mini)
+데이터: JSON 기반 지원사업 데이터
+API 문서: Swagger UI
+백엔드 배포: Render
 
 ## 실행 방법
 
