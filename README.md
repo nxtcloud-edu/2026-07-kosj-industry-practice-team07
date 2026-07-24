@@ -192,8 +192,8 @@ Render 무료 인스턴스는 일정 시간 요청이 없으면 절전 상태로
 {
   "age": 24,
   "region": "세종",
-  "field": "AI",
-  "stage": "예비창업"
+  "field": "IT",
+  "stage": "예비"
 }
 ```
 
