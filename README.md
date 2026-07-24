@@ -71,13 +71,15 @@ AI 아이디어 진단
 
 ## 기술 스택
 
-프론트엔드: React 19, TypeScript, Vite, Tailwind CSS
-라우팅: React Router
-백엔드: Python 3.11, FastAPI
-AI: OpenAI API (gpt-4o-mini)
-데이터: JSON 기반 지원사업 데이터
-API 문서: Swagger UI
-백엔드 배포: Render
+| 영역 | 기술 |
+|---|---|
+| 프론트엔드 | React 19, TypeScript, Vite, Tailwind CSS |
+| 라우팅 | React Router |
+| 백엔드 | Python 3.11, FastAPI |
+| AI | OpenAI API (`gpt-4o-mini`) |
+| 데이터 | JSON 기반 지원사업 데이터 |
+| API 문서 | Swagger UI |
+| 백엔드 배포 | Render |
 
 ## 실행 방법
 
@@ -230,17 +232,6 @@ Render 무료 인스턴스는 일정 시간 요청이 없으면 절전 상태로
 * OpenAI API 키는 프론트엔드나 GitHub에 노출하지 않고 백엔드 환경변수로 관리합니다.
 * API 키가 없어도 개발과 화면 테스트가 가능하도록 폴백 응답을 제공합니다.
 
-## 기술 스택
-
-| 영역 | 기술 |
-|---|---|
-| 프론트엔드 | React 19, TypeScript, Vite, Tailwind CSS |
-| 라우팅 | React Router |
-| 백엔드 | Python 3.11, FastAPI |
-| AI | OpenAI API (`gpt-4o-mini`) |
-| 데이터 | JSON 기반 지원사업 데이터 |
-| API 문서 | Swagger UI |
-| 백엔드 배포 | Render |
 
 ## 팀원
 
