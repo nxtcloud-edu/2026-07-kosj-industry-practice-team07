@@ -2,13 +2,6 @@
 
 > 아이디어 입력 → AI 진단 → 지원사업 매칭 → 사업계획서 초안 생성까지, 예비창업자의 "다음 행동"을 안내하는 서비스
 
-## 프로젝트 구조
-
-```
-frontend/   ← React + TypeScript + Tailwind CSS (프론트엔드)
-backend/    ← Python FastAPI (백엔드 / AI)
-docs/       ← 제안서, 아이디어노트 등 문서
-```
 
 ## 주요 기능
 
